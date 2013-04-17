@@ -113,7 +113,7 @@ fill width x = node 0 [x]
     where node col (d:ds) = 
             case d of
                 Empty             -> Empty <> node col ds
-                Char c            -> Char c <> node (col+1) ds                                -- Can also use Concat (Char c) (node (col+1) ds)
+                Char c            -> Char c <> node (col+1) ds                                -- Can also use Concat (Char c) (node (col+1) ds).
                 Text s            -> Text s <> node (col+length s) ds
                 Line              -> Line <> node 0 ds
                 a `Concat` b      -> node col (a:b:ds)
