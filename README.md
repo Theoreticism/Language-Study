@@ -1,4 +1,4 @@
-haskell
+Haskell (Language Study class code)
 =======
 
-Collection of haskell code from Johnson's haskell class, from bits to completed code
+Collection of Haskell code from Johnson's Haskell class, from bits to completed code.
