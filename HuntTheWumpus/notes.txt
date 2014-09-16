@@ -1,0 +1,6 @@
+random, randomR, randoms, randomRS
+take a random number using randomR and pick a row and a column
+row = fst $ randomR (0, numRows - 2) gen
+col = fst $ randomR (row + 1, numRows - 1) newgen
+newgen becomes gen
+returns row, and new generator
